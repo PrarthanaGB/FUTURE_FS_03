@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#33231d" />
+    <meta name="description" content="SAVOR & SEED is a neighborhood restaurant in Portland serving seasonal plates, natural wine, and warm hospitality." />
+    <meta property="og:title" content="SAVOR & SEED | Gather around the good stuff." />
+    <meta property="og:description" content="Seasonal food, thoughtful pours, and a table waiting for you in Portland." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1600&q=85" />
+    <meta property="og:url" content="https://savorandseed.example.com" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>SAVOR & SEED | Gather around the good stuff.</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header" id="top">
+      <div class="container nav-wrap">
+        <a class="brand" href="#top" aria-label="SAVOR and SEED home"><span class="seed-mark" aria-hidden="true">✦</span><span>SAVOR <i>&</i> SEED</span></a>
+        <button class="menu-toggle" type="button" aria-controls="primary-nav" aria-expanded="false"><span></span><span></span><span></span><span class="sr-only">Open menu</span></button>
+        <nav class="primary-nav" id="primary-nav" aria-label="Primary navigation">
+          <a href="#story">Our story</a><a href="#menu">Menu</a><a href="#space">The space</a><a href="#contact">Visit</a><a class="nav-cta" href="#reserve">Reserve a table <span aria-hidden="true">↗</span></a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="hero">
+        <div class="hero-image" role="img" aria-label="A table set for a beautiful dinner"></div><div class="hero-overlay"></div>
+        <div class="container hero-content">
+          <p class="eyebrow reveal"><span></span> Seasonal kitchen · Portland, Oregon</p>
+          <h1 class="reveal">Gather<br /><em>around</em><br />the good stuff.</h1>
+          <p class="hero-copy reveal">A neighborhood restaurant for long lunches, slow dinners, and the kind of food you talk about on the way home.</p>
+          <div class="hero-actions reveal"><a class="button button-terra" href="#reserve">Reserve your table <span aria-hidden="true">↗</span></a><a class="text-link" href="#menu">See tonight's menu <span aria-hidden="true">↓</span></a></div>
+          <div class="hero-note reveal"><span class="pulse-dot"></span> Open tonight · Dinner from 5pm</div>
+        </div>
+        <div class="hero-scroll" aria-hidden="true"><span>Scroll to savor</span><i></i></div>
+      </section>
+
+      <section class="ticker" aria-label="Restaurant values"><div class="ticker-track"><span>SEASONAL</span><b>✦</b><span>LOCAL</span><b>✦</b><span>ALWAYS WARM</span><b>✦</b><span>SEASONAL</span><b>✦</b><span>LOCAL</span><b>✦</b><span>ALWAYS WARM</span><b>✦</b></div></section>
+
+      <section class="story section-pad" id="story">
+        <div class="container story-grid">
+          <div><p class="eyebrow dark reveal"><span></span> A little about us</p><h2 class="reveal">Good food<br /><i>feels like</i><br />coming home.</h2></div>
+          <div class="story-detail reveal"><p class="large-copy">SAVOR & SEED began with a simple belief: the best nights are made of generous plates, a bottle passed around, and nowhere else to be.</p><p>Our kitchen follows the seasons, our bar follows your mood, and our dining room is built for one more at the table. Come as you are. Stay for dessert.</p><a class="arrow-link" href="#contact">Meet us on SE Division <span aria-hidden="true">→</span></a></div>
+        </div>
+        <div class="container story-stats"><div class="stat reveal"><strong>2018</strong><span>First table set</span></div><div class="stat reveal"><strong>42</strong><span>Seats, never rushed</span></div><div class="stat reveal"><strong>18</strong><span>Local growers</span></div><div class="stat reveal"><strong>1</strong><span>Big open kitchen</span></div></div>
+      </section>
+
+      <section class="menu-section section-pad" id="menu">
+        <div class="container">
+          <div class="section-heading reveal"><div><p class="eyebrow dark"><span></span> From the kitchen</p><h2>A menu that<br /><i>moves with</i><br />the season.</h2></div><p>Our menu changes often, but the intention stays the same: thoughtful ingredients, honest technique, and plates that invite another bite.</p></div>
+          <div class="menu-tabs" role="tablist" aria-label="Menu categories"><button class="active" role="tab" aria-selected="true" data-category="small">Small plates</button><button role="tab" aria-selected="false" data-category="mains">Mains</button><button role="tab" aria-selected="false" data-category="sweet">Sweet + after</button></div>
+          <div class="menu-panel active" data-panel="small">
+            <article class="menu-item reveal"><div><h3>Whipped ricotta <span>GF</span></h3><p>Grilled sourdough, lemon oil, garden herbs</p></div><strong>$14</strong></article>
+            <article class="menu-item reveal"><div><h3>Market beets <span>V</span></h3><p>Labneh, pistachio, burnt orange, dill</p></div><strong>$15</strong></article>
+            <article class="menu-item reveal"><div><h3>Oyster mushrooms</h3><p>Smoked onion, crispy rye, cultured butter</p></div><strong>$16</strong></article>
+            <article class="menu-item reveal"><div><h3>Hamachi crudo <span>GF</span></h3><p>Green strawberry, cucumber, shiso, chili</p></div><strong>$19</strong></article>
+          </div>
+          <div class="menu-panel" data-panel="mains">
+            <article class="menu-item"><div><h3>Ricotta cavatelli</h3><p>Spring peas, preserved lemon, pecorino, mint</p></div><strong>$26</strong></article><article class="menu-item"><div><h3>Wood-grilled steelhead <span>GF</span></h3><p>Fennel, new potato, sorrel beurre blanc</p></div><strong>$32</strong></article><article class="menu-item"><div><h3>Heritage pork chop</h3><p>Charred cabbage, cherry mostarda, jus</p></div><strong>$34</strong></article><article class="menu-item"><div><h3>Ember-roasted squash <span>V</span></h3><p>White bean purée, pepita, salsa verde</p></div><strong>$24</strong></article>
+          </div>
+          <div class="menu-panel" data-panel="sweet">
+            <article class="menu-item"><div><h3>Olive oil cake</h3><p>Strawberry, crème fraîche, basil sugar</p></div><strong>$11</strong></article><article class="menu-item"><div><h3>Dark chocolate pot de crème <span>GF</span></h3><p>Sea salt, cocoa nib, rye shortbread</p></div><strong>$12</strong></article><article class="menu-item"><div><h3>Cheese + preserves</h3><p>Three selections, seasonal jam, seeded crackers</p></div><strong>$16</strong></article><article class="menu-item"><div><h3>Affogato</h3><p>Vanilla bean gelato, Stumptown espresso</p></div><strong>$8</strong></article>
+          </div>
+          <div class="menu-foot reveal"><span><b>V</b> Vegetarian &nbsp; <b>GF</b> Gluten friendly</span><a class="arrow-link dark-link" href="#reserve">Book dinner <span aria-hidden="true">→</span></a></div>
+        </div>
+      </section>
+
+      <section class="chef section-dark section-pad">
+        <div class="container chef-grid"><div class="chef-image reveal" role="img" aria-label="Chef plating a dish in the kitchen"></div><div class="chef-copy reveal"><p class="eyebrow"><span></span> From our chef</p><h2>Let the<br /><i>ingredients</i><br />lead.</h2><p>“I cook the way I like to eat: with curiosity, a little restraint, and enough butter to make you stay for another bite.”</p><div class="signature">Mara Alvarez <span>· Chef + co-owner</span></div><a class="text-link" href="#contact">Read our story <span aria-hidden="true">↗</span></a></div></div>
+      </section>
+
+      <section class="testimonial section-cream"><div class="quote-mark">“</div><div class="container quote-wrap reveal"><blockquote>The sort of place that makes you want to order one more thing, linger over the last sip, and make plans to come back <i>next week.</i></blockquote><div class="quote-person"><div class="avatar">JM</div><div><strong>Julia M.</strong><span>Portland · Guest since 2021</span></div></div></div></section>
+
+      <section class="space section-pad" id="space">
+        <div class="container"><div class="section-heading reveal"><div><p class="eyebrow dark"><span></span> Step inside</p><h2>Come for<br /><i>the table.</i></h2></div><p>Sunlight in the morning, candlelight after dark. A room with enough softness to stay awhile and enough energy to feel alive.</p></div>
+          <div class="gallery-grid reveal"><div class="gallery-image gallery-one" role="img" aria-label="Warm restaurant dining room"></div><div class="gallery-image gallery-two" role="img" aria-label="Seasonal plated dish"></div><div class="gallery-image gallery-three" role="img" aria-label="Cocktail at the restaurant bar"></div><div class="gallery-image gallery-four" role="img" aria-label="Fresh ingredients on a table"></div></div>
+          <div class="space-details" id="contact"><div><strong>Find us</strong><span>2525 SE Division St.<br />Portland, OR 97202</span></div><div><strong>Kitchen hours</strong><span>Tue — Sun<br />5:00pm — 10:00pm</span></div><div><strong>Say hello</strong><span><a href="tel:+15035550184">(503) 555-0184</a><br /><a href="mailto:hello@savorandseed.com">hello@savorandseed.com</a></span></div><a class="arrow-link dark-link" href="https://maps.google.com/?q=2525+SE+Division+St+Portland+OR" target="_blank" rel="noreferrer">Get directions <span aria-hidden="true">↗</span></a></div>
+        </div>
+      </section>
+
+      <section class="reserve section-dark section-pad" id="reserve"><div class="container reserve-grid"><div class="reserve-intro reveal"><p class="eyebrow"><span></span> Pull up a chair</p><h2>Save us<br /><i>a seat.</i></h2><p>For parties of 7 or more, please email us directly. We are happy to help make your gathering feel easy.</p><div class="contact-links"><a href="mailto:hello@savorandseed.com">hello@savorandseed.com <span>↗</span></a><a href="tel:+15035550184">(503) 555-0184 <span>↗</span></a></div></div>
+          <form class="reservation-form reveal" id="reservation-form" novalidate><div class="form-row two"><div><label for="guest-name">Your name <span>*</span></label><input id="guest-name" name="name" type="text" placeholder="First and last name" required /></div><div><label for="guest-email">Email <span>*</span></label><input id="guest-email" name="email" type="email" placeholder="you@example.com" required /></div></div><div class="form-row two"><div><label for="date">Preferred date <span>*</span></label><input id="date" name="date" type="date" required /></div><div><label for="time">Preferred time</label><select id="time" name="time"><option value="">Choose a time</option><option>5:00pm</option><option>6:00pm</option><option>7:00pm</option><option>8:00pm</option></select></div></div><div class="form-row"><label for="party">Party size <span>*</span></label><select id="party" name="party" required><option value="">How many guests?</option><option>1–2 guests</option><option>3–4 guests</option><option>5–6 guests</option></select></div><div class="form-row"><label for="notes">Anything we should know?</label><textarea id="notes" name="notes" rows="3" placeholder="Dietary notes, celebration, or a special request..."></textarea></div><p class="form-error" role="alert" hidden>Please add your name, email, date, and party size so we can hold your request.</p><button class="button button-terra" type="submit">Request a reservation <span aria-hidden="true">↗</span></button><p class="form-note">We will confirm your table by email within one business day.</p><p class="form-success" role="status" hidden>Your reservation request is in. We’ll be in touch soon with a confirmation.</p></form>
+        </div></section>
+    </main>
+    <footer class="site-footer"><div class="container footer-top"><a class="brand" href="#top"><span class="seed-mark" aria-hidden="true">✦</span><span>SAVOR <i>&</i> SEED</span></a><p>Good food.<br />Good company.</p><div class="socials"><a href="https://instagram.com" aria-label="Instagram" target="_blank" rel="noreferrer">ig</a><a href="https://facebook.com" aria-label="Facebook" target="_blank" rel="noreferrer">fb</a></div></div><div class="container footer-bottom"><span>© 2024 Savor & Seed. All rights reserved.</span><span>Made with good taste.</span><a href="#top">Back to top ↑</a></div></footer>
+    <script src="script.js"></script>
+  </body>
+</html>
