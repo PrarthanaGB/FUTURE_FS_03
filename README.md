@@ -4,7 +4,8 @@ SAVOR & SEED is a responsive restaurant ordering experience for a fictional neig
 
 ## Ordering experience
 
-- Eight dish cards with category, description, INR price, and reliable Unsplash food imagery.
+- A rich 18-item catalog: 6 pizzas (Margherita, Farmhouse, Paneer Tikka, BBQ Chicken, Four Cheese, Mexican), 4 burgers, 4 cool drinks, and 4 cakes/desserts. Every product has its own card, image, category/diet tag, description, and INR price.
+- Filter tabs for Pizza, Burgers, Cool drinks, and Cakes & desserts, plus menu search and price sorting.
 - Add-to-bag buttons, cart drawer, quantity controls, remove actions, empty state, live subtotal, ₹35 packaging fee, delivery/pickup fee logic, and grand total.
 - Checkout form for customer name, phone, email, delivery or pickup, conditional delivery address, and cash/UPI placeholder/pay-at-counter choices.
 - Native accessible required-field validation, keyboard-friendly buttons, live cart count, and generated order number with a 35–45 minute estimate.
