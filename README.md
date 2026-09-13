@@ -1,6 +1,6 @@
 # SAVOR & SEED
 
-SAVOR & SEED is a responsive restaurant ordering experience for a fictional neighborhood kitchen. The polished deep-navy, ocean-blue, ice-blue, and cool-cream UI pairs image-led dish cards with a practical cart and checkout flow.
+SAVOR & SEED is a responsive Indian-inspired café ordering experience for a fictional neighborhood kitchen. Its saffron, chai brown, terracotta, ivory, leaf green, and restrained indigo palette pairs image-led dishes with a practical cart and checkout flow.
 
 ## Ordering experience
 

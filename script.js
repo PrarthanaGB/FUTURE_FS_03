@@ -9,9 +9,9 @@ const observer = new IntersectionObserver((entries) => entries.forEach((entry) =
 $$('.reveal').forEach((el) => observer.observe(el));
 
 const catalog = [
-  ['margherita','Margherita','Pizza','₹499','Classic tomato, fior di latte, basil.','V','https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=700&q=85&v=4'],
+  ['margherita','Tandoori Margherita','Pizza','₹499','Classic tomato, fior di latte, basil, and a gentle tandoori char.','V','https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=700&q=85&v=4'],
   ['farmhouse','Farmhouse','Pizza','₹649','Roasted peppers, corn, onion, olives.','V','https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=700&q=85&v=4'],
-  ['paneer-tikka','Paneer Tikka','Pizza','₹699','Tandoori paneer, capsicum, red onion, mint.','V','https://images.unsplash.com/photo-1604068549290-dea0e4a305ca?auto=format&fit=crop&w=700&q=85&v=4'],
+  ['paneer-tikka','Paneer Tikka Masala','Pizza','₹699','Tandoori paneer, capsicum, red onion, mint, and masala oil.','V','https://images.unsplash.com/photo-1604068549290-dea0e4a305ca?auto=format&fit=crop&w=700&q=85&v=4'],
   ['bbq-chicken','BBQ Chicken','Pizza','₹749','Smoky chicken, mozzarella, pickled jalapeño.','Non-veg','https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=700&q=85&v=4'],
   ['four-cheese','Four Cheese','Pizza','₹799','Mozzarella, cheddar, parmesan, blue cheese.','V','https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=700&q=85&v=4'],
   ['mexican','Mexican','Pizza','₹699','Salsa roja, beans, corn, jalapeño, avocado.','V','https://images.unsplash.com/photo-1594007654729-407eedc4be65?auto=format&fit=crop&w=700&q=85&v=4'],
@@ -19,11 +19,11 @@ const catalog = [
   ['crispy-chicken','Crispy Chicken Burger','Burgers','₹579','Buttermilk chicken, slaw, hot honey.','Non-veg','https://images.unsplash.com/photo-1606755962773-d324e0a13086?auto=format&fit=crop&w=700&q=85&v=4'],
   ['paneer-burger','Smoky Paneer Burger','Burgers','₹499','Grilled paneer, chipotle mayo, greens.','V','https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=700&q=85&v=4'],
   ['mushroom-burger','Truffle Mushroom Burger','Burgers','₹529','Portobello, swiss cheese, truffle aioli.','V','https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?auto=format&fit=crop&w=700&q=85&v=4'],
-  ['mango-fizz','Mango Basil Fizz','Beverages','₹199','Fresh mango, basil, lime, sparkling water.','V','https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=700&q=85&v=4'],
-  ['cold-coffee','S&S Cold Coffee','Beverages','₹229','Slow-brew coffee, vanilla, oat foam.','V','https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=700&q=85&v=4'],
+  ['mango-fizz','Kairi Basil Fizz','Beverages','₹199','Kairi and mango, basil, lime, sparkling water.','V','https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=700&q=85&v=4'],
+  ['cold-coffee','Filter Coffee Cloud','Beverages','₹229','Slow-brew coffee, vanilla, oat foam, and a chai-bar mood.','V','https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=700&q=85&v=4'],
   ['berry-cooler','Berry Rose Cooler','Beverages','₹219','Mixed berries, rose, lemon, soda.','V','https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=700&q=85&v=4'],
   ['iced-tea','Peach Iced Tea','Beverages','₹179','Black tea, peach, citrus, mint.','V','https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=700&q=85&v=4'],
-  ['tres-leches','Tres Leches Cake','Desserts','₹349','Soft vanilla sponge, three milks, berries.','V','https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=700&q=85&v=4'],
+  ['tres-leches','Cardamom Tres Leches','Desserts','₹349','Soft cardamom sponge, three milks, pistachio, and berries.','V','https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=700&q=85&v=4'],
   ['chocolate-cake','Dark Chocolate Cake','Desserts','₹379','Fudge cake, ganache, sea salt.','V','https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=700&q=85&v=4'],
   ['cheesecake','Baked Cheesecake','Desserts','₹359','Cream cheese, biscuit base, berry compote.','V','https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=700&q=85&v=4'],
   ['brownie','Warm Fudge Brownie','Desserts','₹299','Dark chocolate brownie, vanilla ice cream.','V','https://images.unsplash.com/photo-1564355808539-22fda35bed7e?auto=format&fit=crop&w=700&q=85&v=4']
