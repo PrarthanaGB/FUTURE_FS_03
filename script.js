@@ -10,11 +10,11 @@ $$('.reveal').forEach((el) => observer.observe(el));
 
 const catalog = [
   ['margherita','Margherita','Pizza','₹499','Classic tomato, fior di latte, basil.','V','https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=700&q=85'],
-  ['farmhouse','Farmhouse','Pizza','₹649','Roasted peppers, corn, onion, olives.','V','https://images.unsplash.com/photo-1593560708920-61dd98c8c8d5?auto=format&fit=crop&w=700&q=85'],
+  ['farmhouse','Farmhouse','Pizza','₹649','Roasted peppers, corn, onion, olives.','V','https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=700&q=85'],
   ['paneer-tikka','Paneer Tikka','Pizza','₹699','Tandoori paneer, capsicum, red onion, mint.','V','https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=700&q=85'],
   ['bbq-chicken','BBQ Chicken','Pizza','₹749','Smoky chicken, mozzarella, pickled jalapeño.','Non-veg','https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=700&q=85'],
   ['four-cheese','Four Cheese','Pizza','₹799','Mozzarella, cheddar, parmesan, blue cheese.','V','https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=700&q=85'],
-  ['mexican','Mexican','Pizza','₹699','Salsa roja, beans, corn, jalapeño, avocado.','V','https://images.unsplash.com/photo-1593560708920-61dd98c8c8d5?auto=format&fit=crop&w=700&q=85'],
+  ['mexican','Mexican','Pizza','₹699','Salsa roja, beans, corn, jalapeño, avocado.','V','https://images.unsplash.com/photo-1594007654729-407eedc4be65?auto=format&fit=crop&w=700&q=85'],
   ['classic-burger','Classic S&S Burger','Burgers','₹549','House patty, cheddar, lettuce, secret sauce.','Non-veg','https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=700&q=85'],
   ['crispy-chicken','Crispy Chicken Burger','Burgers','₹579','Buttermilk chicken, slaw, hot honey.','Non-veg','https://images.unsplash.com/photo-1610970881699-44a5587cabec?auto=format&fit=crop&w=700&q=85'],
   ['paneer-burger','Smoky Paneer Burger','Burgers','₹499','Grilled paneer, chipotle mayo, greens.','V','https://images.unsplash.com/photo-1520072959219-c595dc870360?auto=format&fit=crop&w=700&q=85'],
@@ -38,6 +38,7 @@ const renderCatalog = () => {
   dishGrid.innerHTML = visible.map((item) => `<article class="dish-card reveal"><img src="${item.image}" alt="${item.name}"><div class="dish-body"><div class="dish-meta"><span>${item.category} · ${item.tag}</span><strong>${money(item.price)}</strong></div><h3>${item.name}</h3><p>${item.description}</p><button class="add-button" data-id="${item.id}" data-name="${item.name}" data-price="${item.price}" data-image="${item.image}">Add to cart <span>+</span></button></div></article>`).join('');
   $('.no-results').hidden = visible.length > 0;
   $$('.reveal', dishGrid).forEach((element) => observer.observe(element));
+  $$('img', dishGrid).forEach((image) => image.addEventListener('error', () => { image.onerror = null; image.src = 'https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=700&q=85'; }));
   $$('.add-button', dishGrid).forEach((button) => button.addEventListener('click', addToCart));
 };
 
