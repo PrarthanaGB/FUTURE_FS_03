@@ -1,46 +1,38 @@
-# SAVOR & SEED
+# FUTURE_FS_01 — Prarthana G B Portfolio
 
-SAVOR & SEED is a responsive Indian-inspired café ordering experience for a fictional neighborhood kitchen. Its saffron, chai brown, terracotta, ivory, leaf green, and restrained indigo palette pairs image-led dishes with a practical cart and checkout flow.
-
-## Ordering experience
-
-- A rich 18-item catalog: 6 pizzas (Margherita, Farmhouse, Paneer Tikka, BBQ Chicken, Four Cheese, Mexican), 4 burgers, 4 cool drinks, and 4 cakes/desserts. Every product has its own card, image, category/diet tag, description, and INR price.
-- Filter tabs for Pizza, Burgers, Cool drinks, and Cakes & desserts, plus menu search and price sorting.
-- Catalog images use item-specific Unsplash URLs with a client-side image fallback so a temporary remote asset failure never leaves a broken card.
-- Add-to-bag buttons, cart drawer, quantity controls, remove actions, empty state, live subtotal, ₹35 packaging fee, delivery/pickup fee logic, and grand total.
-- Checkout form for customer name, phone, email, delivery or pickup, conditional delivery address, and cash/UPI placeholder/pay-at-counter choices.
-- Native accessible required-field validation, keyboard-friendly buttons, live cart count, and generated order number with a 35–45 minute estimate.
-- Dining reservations remain available as a separate form below the ordering experience.
-
-This is a **front-end demo only**. It does not process real payments, store orders, send email, or connect to a delivery provider. For production, connect the checkout submit handler in `script.js` to an order API/payment provider and replace the placeholder business details.
+Task 1 portfolio for **FUTURE_FS_01**: a responsive, accessible personal portfolio for Prarthana G B, an Information Science Engineering student in Shivamogga, Karnataka. The site highlights her education, skills, projects, certifications, achievements, language proficiency, and resume.
 
 ## Run locally
 
-The site has no dependencies or build step:
+This is a dependency-free static site. From the repository root, run:
 
 ```bash
 python -m http.server 8080
 ```
 
-Visit `http://localhost:8080`.
+Then visit <http://localhost:8080>.
 
 ## Deploy to GitHub Pages
 
-`.github/workflows/deploy-pages.yml` publishes the repository root using official GitHub Pages actions.
+The included `.github/workflows/deploy-pages.yml` publishes the repository root with the official GitHub Pages actions.
 
-1. Push `main` to GitHub.
-2. In **Settings → Pages**, choose **GitHub Actions** as the source.
-3. Pushes to `main` or a manual workflow run deploy the site.
+1. Push the repository to GitHub.
+2. In **Settings → Pages**, set the source to **GitHub Actions**.
+3. Push to `main` or trigger the workflow manually.
 
-Live project URL:
-
-**https://prarthanagb.github.io/FUTURE_FS_03/**
+Live project URL: <https://prarthanagb.github.io/FUTURE_FS_03/>
 
 ## Project structure
 
 ```text
-index.html   Semantic restaurant site, dish cards, cart, checkout, reservations, SEO
-styles.css   Warm responsive UI, cards, drawer, modal, responsive breakpoints
-script.js    Menu filtering, cart state, totals, checkout validation and confirmation
-favicon.svg  SAVOR & SEED favicon
+index.html   Semantic portfolio content, SEO metadata, project and contact sections
+styles.css   Responsive visual system, accessible focus states, cards, timeline, and layout
+script.js    Mobile navigation, scroll reveals, and contact-form demo behavior
+favicon.svg  Portfolio favicon
+assets/      Provided resume PDF used by the view/download resume actions
+images/      Provided profile image used in the hero profile card
 ```
+
+## Contact form behavior
+
+The contact form is intentionally a front-end demo: it validates required fields and email format, then shows a confirmation message without sending or storing data. Connect the submit handler in `script.js` to a trusted form endpoint or backend when a production contact workflow is available.
